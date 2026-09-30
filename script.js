@@ -2,9 +2,9 @@ function makeid(l) {
   // write your code here
 	let res="";
 	let char_List="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-	for(let i=;i<l;i++){
-		let index=Math.floor(Math.random()*char_List.length);
-		res+=char_List[index];
+	for(let i=0;i<l;i++){
+		
+		res+=char_List.charAt(Math.floor(Math.random()*char_List.length));
 	}
 	return res;
 }
